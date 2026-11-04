@@ -6,16 +6,16 @@ The idea was simple: help other kids with school. I wrote lessons on maths, Engl
 
 In 2026 Weebly closed in Kenya and the site went offline. The Wayback Machine had never saved it, so the only copy left was inside the Weebly editor. I got it out of there and rebuilt it here, so it can stay online.
 
-[![The Academics For You home page](docs/home.png)](https://ajv99.github.io/academicsforyou/)
+[![The Academics For You home page](docs/home.png)](https://ajv99.github.io/AcademicsForYou/)
 
 ## Highlights
 
-- **[The quizzes, built out of links](https://ajv99.github.io/academicsforyou/addition-q1.html).** I made quizzes out of plain pages. Each answer is a button: the right one takes you to the next question, and a wrong one takes you to that question's "Try Again" page. The addition and English quizzes take up 23 of the site's 41 pages. **Now that's commitment!**
-- **[The Scratch games](https://ajv99.github.io/academicsforyou/subtraction.html).** Then I realised one Scratch project could do what all those pages did. I made three and shared them together on 4 October 2015, and they still run inside the site today. Scratch was and still is the OG.
-- **[My YouTube lessons](https://ajv99.github.io/academicsforyou/addition.html).** "Understanding Addition", "Subtraction", "Multiplication" and "Division", one for each maths lesson.
-- **[The pitch](https://ajv99.github.io/academicsforyou/).** "Have NO time to talk to teachers! Teachers TOO busy to talk to you! Well, you have landed on the right website!"
-- **[The superscript workaround](https://ajv99.github.io/academicsforyou/atoms.html).** The editor couldn't write powers, so I made a picture of "1¹" and put a big red CAUTION / WARNING above it to explain.
-- **[The story challenge](https://ajv99.github.io/academicsforyou/english-bonus.html).** Write a story, email it in, and I'd mark it and send it back "as fast as we can".
+- **[The quizzes, built out of links](https://ajv99.github.io/AcademicsForYou/addition-q1.html).** I made quizzes out of plain pages. Each answer is a button: the right one takes you to the next question, and a wrong one takes you to that question's "Try Again" page. The addition and English quizzes take up 23 of the site's 41 pages. **Now that's commitment!**
+- **[The Scratch games](https://ajv99.github.io/AcademicsForYou/subtraction.html).** Then I realised one Scratch project could do what all those pages did. I made three and shared them together on 4 October 2015, and they still run inside the site today. Scratch was and still is the OG.
+- **[My YouTube lessons](https://ajv99.github.io/AcademicsForYou/addition.html).** "Understanding Addition", "Subtraction", "Multiplication" and "Division", one for each maths lesson.
+- **[The pitch](https://ajv99.github.io/AcademicsForYou/).** "Have NO time to talk to teachers! Teachers TOO busy to talk to you! Well, you have landed on the right website!"
+- **[The superscript workaround](https://ajv99.github.io/AcademicsForYou/atoms.html).** The editor couldn't write powers, so I made a picture of "1¹" and put a big red CAUTION / WARNING above it to explain.
+- **[The story challenge](https://ajv99.github.io/AcademicsForYou/english-bonus.html).** Write a story, email it in, and I'd mark it and send it back "as fast as we can".
 
 ## What I kept
 
