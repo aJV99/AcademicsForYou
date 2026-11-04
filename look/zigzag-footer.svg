@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="756" height="30" viewBox="0 0 756 30">
+  <!-- Top edge of the dark footer -->
+  <polygon points="0,28 190,13 400,29 600,3 756,28 756,30 0,30" fill="#232323"/>
+  <g stroke-width="4" stroke-linecap="square" fill="none">
+    <polyline points="0,28 190,13" stroke="#f0b323"/>
+    <polyline points="190,13 400,29" stroke="#c9de1f"/>
+    <polyline points="400,29 600,3" stroke="#20dcb0"/>
+    <polyline points="600,3 756,28" stroke="#e6249e"/>
+  </g>
+</svg>

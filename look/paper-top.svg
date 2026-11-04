@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="54" viewBox="0 0 940 54">
+  <!-- Torn top edge of the yellow banner paper, with coloured paper strips along it -->
+  <polygon points="0,52 108,17 310,21 465,6 510,11 655,31 828,14 940,33 940,54 0,54" fill="#fffcb3"/>
+  <g fill-opacity="1">
+    <polygon points="0,48 108,13 112,18 3,54" fill="#e6249e"/>
+    <polygon points="108,13 310,17 310,23 110,18" fill="#20dcb0"/>
+    <polygon points="310,22 465,2 467,9 312,24" fill="#c9de1f"/>
+    <polygon points="465,2 510,7 509,13 466,9" fill="#b9d014"/>
+    <polygon points="510,7 655,27 654,33 509,13" fill="#e0b223"/>
+    <polygon points="655,28 828,10 828,17 656,33" fill="#e3d62a"/>
+    <polygon points="828,10 940,29 940,35 828,17" fill="#1f7fe0"/>
+  </g>
+</svg>

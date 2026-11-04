@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1349" height="239" viewBox="0 0 1349 239">
+  <!-- Rolling hills, pine trees, a river and a balloon: the scene at the bottom of every page -->
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fc322"/><stop offset="1" stop-color="#7e9c18"/></linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cdee3a"/><stop offset=".55" stop-color="#a8cb2a"/><stop offset="1" stop-color="#86a71d"/></linearGradient>
+    <linearGradient id="pine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a9a25"/><stop offset="1" stop-color="#244f0d"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#44e9ff"/><stop offset="1" stop-color="#14d8f5"/></linearGradient>
+  </defs>
+  <path d="M330,74 C420,58 520,112 620,96 S800,70 900,92 S1050,48 1120,102" stroke="#cfcfcf" stroke-width="1.5" stroke-dasharray="6 5" fill="none"/>
+  <path d="M0,239 C150,170 245,82 345,86 C440,90 480,112 565,116 C640,120 700,92 785,96 C865,100 905,72 1005,76 C1105,80 1185,132 1262,172 C1300,196 1330,222 1349,239 Z" fill="url(#back)"/>
+  <path d="M10,239 C140,190 230,96 330,102 C430,108 470,150 560,140 C640,130 700,100 770,128 C800,142 790,180 770,239 Z" fill="url(#front)"/>
+  <path d="M760,239 C800,190 830,150 900,120 C980,90 1060,92 1130,120 C1200,148 1240,170 1280,200 C1305,220 1325,232 1340,239 Z" fill="url(#front)"/>
+  <path d="M640,239 C700,214 755,196 770,176 C786,154 802,142 788,128 L798,128 C818,140 806,162 808,182 C812,206 836,224 858,239 Z" fill="url(#water)"/>
+  <g stroke="#bff7ff" stroke-width="2" fill="none" opacity=".8">
+    <path d="M712,226 C740,214 770,204 784,186"/><path d="M735,232 C770,220 795,206 800,190"/><path d="M790,170 C796,160 800,150 796,140"/>
+  </g>
+  <g fill="#8d8d8d"><ellipse cx="668" cy="198" rx="12" ry="8"/><ellipse cx="697" cy="183" rx="8" ry="6"/><ellipse cx="820" cy="177" rx="12" ry="8"/><ellipse cx="781" cy="143" rx="6" ry="4"/></g>
+  <g fill="#b5b5b5"><ellipse cx="666" cy="195" rx="7" ry="4"/><ellipse cx="818" cy="174" rx="7" ry="4"/></g>
+  <path d="M198,122 q4,-10 1,-14 h6 q-3,5 4,14 z" fill="#6b3d17"/><path d="M202,60 C204,69 209,98 210,101 L194,103 C195,97 200,69 202,60 z" fill="url(#pine)"/><path d="M202,74 C205,83 212,104 213,107 L191,109 C192,104 199,83 202,74 z" fill="url(#pine)"/><path d="M202,88 C206,97 215,111 216,114 L188,116 C189,110 198,97 202,88 z" fill="url(#pine)"/><path d="M296,156 q4,-23 1,-32 h6 q-3,12 4,32 z" fill="#6b3d17"/><path d="M300,11 C305,33 317,100 318,107 L282,109 C283,98 295,33 300,11 z" fill="url(#pine)"/><path d="M300,43 C307,65 324,115 327,122 L274,124 C276,113 293,65 300,43 z" fill="url(#pine)"/><path d="M300,76 C309,98 330,130 333,137 L268,139 C270,128 291,98 300,76 z" fill="url(#pine)"/><path d="M536,215 q4,-28 1,-39 h6 q-3,14 4,39 z" fill="#6b3d17"/><path d="M540,37 C546,64 561,146 563,155 L518,157 C519,144 534,64 540,37 z" fill="url(#pine)"/><path d="M540,76 C549,103 570,164 573,173 L509,175 C510,163 531,103 540,76 z" fill="url(#pine)"/><path d="M540,117 C551,144 577,183 581,192 L501,194 C503,181 529,144 540,117 z" fill="url(#pine)"/><path d="M826,137 q4,-11 1,-15 h6 q-3,5 4,15 z" fill="#6b3d17"/><path d="M830,71 C832,81 838,111 838,115 L822,117 C822,111 828,81 830,71 z" fill="url(#pine)"/><path d="M830,86 C833,95 841,118 842,122 L818,124 C819,118 827,95 830,86 z" fill="url(#pine)"/><path d="M830,101 C834,111 844,125 845,128 L815,130 C816,124 826,111 830,101 z" fill="url(#pine)"/><path d="M958,163 q4,-23 1,-31 h6 q-3,11 4,31 z" fill="#6b3d17"/><path d="M962,21 C967,42 978,108 980,115 L945,117 C946,106 957,42 962,21 z" fill="url(#pine)"/><path d="M962,52 C969,74 986,123 988,130 L937,132 C938,121 955,74 962,52 z" fill="url(#pine)"/><path d="M962,85 C971,106 992,137 995,145 L931,147 C932,136 953,106 962,85 z" fill="url(#pine)"/><path d="M1184,143 q4,-16 1,-22 h6 q-3,8 4,22 z" fill="#6b3d17"/><path d="M1188,41 C1192,56 1200,103 1201,109 L1176,111 C1176,102 1184,56 1188,41 z" fill="url(#pine)"/><path d="M1188,63 C1193,79 1205,114 1207,119 L1170,121 C1171,113 1183,79 1188,63 z" fill="url(#pine)"/><path d="M1188,87 C1194,102 1209,125 1212,130 L1166,132 C1167,124 1182,102 1188,87 z" fill="url(#pine)"/>
+  <path d="M216,53 C220,62 214,68 222,76" stroke="#9a9a9a" fill="none"/>
+  <ellipse cx="216" cy="48" rx="6" ry="7" fill="#ffcc1a"/><ellipse cx="214" cy="46" rx="2" ry="2.5" fill="#fff3a6"/>
+</svg>

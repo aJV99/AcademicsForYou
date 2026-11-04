@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="280" viewBox="0 0 840 280" preserveAspectRatio="xMidYMid slice">
+  <!-- Header picture, drawn to replace the theme's stock photo: a bright study-time sky -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fd6f5"/><stop offset="1" stop-color="#d9f6ff"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff59e"/><stop offset=".55" stop-color="#ffe45c"/><stop offset="1" stop-color="#ffe45c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="840" height="280" fill="url(#sky)"/>
+  <circle cx="720" cy="62" r="70" fill="url(#sun)"/>
+  <circle cx="720" cy="62" r="30" fill="#ffd93b"/>
+  <g fill="#ffffff" opacity=".9">
+    <circle cx="120" cy="60" r="22"/><circle cx="148" cy="52" r="28"/><circle cx="178" cy="62" r="20"/><rect x="110" y="60" width="80" height="20" rx="10"/>
+    <circle cx="520" cy="40" r="16"/><circle cx="542" cy="34" r="22"/><circle cx="566" cy="42" r="15"/><rect x="510" y="40" width="64" height="16" rx="8"/>
+  </g>
+  <!-- grassy hill -->
+  <path d="M0,230 C160,190 300,215 440,205 C600,193 720,180 840,205 V280 H0 Z" fill="#9fd23a"/>
+  <path d="M0,255 C200,232 380,250 560,240 C680,234 760,226 840,236 V280 H0 Z" fill="#86bd2c"/>
+  <!-- letters and numbers -->
+  <g font-family="Comic Sans MS, Chalkboard SE, Coming Soon, cursive" font-weight="700" text-anchor="middle">
+    <text x="90" y="175" font-size="86" fill="#e6249e" transform="rotate(-10 90 175)">A</text>
+    <text x="170" y="150" font-size="72" fill="#1f7fe0" transform="rotate(8 170 150)">B</text>
+    <text x="240" y="190" font-size="80" fill="#f0b323" transform="rotate(-6 240 190)">C</text>
+    <text x="600" y="190" font-size="70" fill="#20b98f" transform="rotate(6 600 190)">1</text>
+    <text x="660" y="170" font-size="64" fill="#e6249e" transform="rotate(-8 660 170)">2</text>
+    <text x="725" y="200" font-size="76" fill="#7a2bc4" transform="rotate(5 725 200)">3</text>
+    <text x="330" y="96" font-size="48" fill="#ffffff">+</text>
+    <text x="470" y="120" font-size="48" fill="#ffffff">÷</text>
+    <text x="790" y="140" font-size="44" fill="#ffffff">×</text>
+    <text x="40" y="110" font-size="44" fill="#ffffff">−</text>
+  </g>
+  <!-- atom -->
+  <g transform="translate(410 160)" fill="none" stroke="#7a2bc4" stroke-width="5">
+    <ellipse rx="58" ry="20"/><ellipse rx="58" ry="20" transform="rotate(60)"/><ellipse rx="58" ry="20" transform="rotate(-60)"/>
+    <circle r="9" fill="#e6249e" stroke="none"/>
+  </g>
+  <!-- book -->
+  <g transform="translate(500 205) rotate(-4)">
+    <path d="M0,0 L48,-10 L96,0 L96,40 L48,30 L0,40 Z" fill="#ffffff" stroke="#1f7fe0" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M48,-10 V30" stroke="#1f7fe0" stroke-width="3"/>
+    <g stroke="#9cc9ee" stroke-width="2"><path d="M10,6 L40,0 M10,14 L40,8 M10,22 L40,16 M56,0 L86,6 M56,8 L86,14 M56,16 L86,22"/></g>
+  </g>
+  <!-- pencil -->
+  <g transform="translate(300 225) rotate(-28)">
+    <rect x="0" y="-9" width="110" height="18" fill="#ffc72c"/>
+    <rect x="0" y="-9" width="110" height="6" fill="#ffd95e"/>
+    <rect x="-14" y="-9" width="14" height="18" fill="#f48fb1"/><rect x="-2" y="-9" width="6" height="18" fill="#c0c0c0"/>
+    <path d="M110,-9 L134,0 L110,9 Z" fill="#f3d3a4"/><path d="M126,-3 L134,0 L126,3 Z" fill="#3a3a3a"/>
+  </g>
+  <!-- stars -->
+  <g fill="#fff59e">
+    <path d="M300,40 l5,11 12,1 -9,8 3,12 -11,-6 -11,6 3,-12 -9,-8 12,-1z"/>
+    <path d="M620,96 l4,8 9,1 -7,6 2,9 -8,-5 -8,5 2,-9 -7,-6 9,-1z"/>
+    <path d="M30,30 l4,8 9,1 -7,6 2,9 -8,-5 -8,5 2,-9 -7,-6 9,-1z"/>
+  </g>
+</svg>

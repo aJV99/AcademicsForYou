@@ -1,0 +1,199 @@
+/* Academics For You: a hand-made recreation of the site's 2015 look.
+   Every image here is drawn in look/ (SVG) or with CSS. No Weebly theme files are used. */
+
+:root {
+  --sky: #b7eeff;
+  --ink: #555555;
+  --dark: #0e2926;
+  --heading: #222222;
+  --link: #90c000;
+  --link-hover: #668800;
+  --nav-hover: #dbf7ff;
+  --yellow-paper: #fffcb3;
+  --yellow-line: #faf7af;
+  --white-line: #fafafa;
+}
+
+/* ---------- base ---------- */
+html, body { margin: 0; padding: 0; }
+body { font: 300 16px 'Nunito', sans-serif; color: var(--ink); background: var(--sky); }
+h1, h2, h3, h4, p, ul, ol, li, table { margin: 0; padding: 0; }
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); }
+a img { border: 0; }
+
+h2 { font: 400 30px/1.2 'Coming Soon', cursive; color: var(--heading); padding: .5em 0 .2em; word-wrap: break-word; }
+p { line-height: 1.5; padding: .5em 0; }
+.paragraph { line-height: 1.5; margin: 0 0 10px; word-wrap: break-word; }
+
+.container { width: 940px; margin: 0 auto; }
+.lined-white { background: repeating-linear-gradient(to bottom, #fff 0 11px, var(--white-line) 11px 12px); }
+.lined-yellow { background: repeating-linear-gradient(to bottom, var(--yellow-paper) 0 11px, var(--yellow-line) 11px 12px); }
+
+/* ---------- top strip: phone number and social icons ---------- */
+#header-wrap { background: repeating-linear-gradient(to bottom, #fff 0 11px, var(--white-line) 11px 12px); }
+#header-wrap-inner { background: url(zigzag-header.svg) repeat-x bottom; }
+#header { width: 100%; height: 97px; margin-bottom: 28px; border-collapse: collapse; }
+#header td { vertical-align: top; padding: 20px 0; }
+#header td.social { text-align: right; }
+
+.social-icons { display: inline-flex; gap: 5px; }
+.social-icon { width: 28px; height: 29px; border-radius: 3px; background: linear-gradient(#6b6b6b, #4a4a4a); display: inline-flex; align-items: center; justify-content: center; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15); }
+.social-icon:hover { background: linear-gradient(#7b7b7b, #555); }
+.social-icon svg { width: 16px; height: 16px; fill: #fff; }
+
+/* ---------- logo and menu ---------- */
+#nav-wrap { position: relative; z-index: 20; }
+#nav-wrap table { width: 100%; margin-top: 15px; border-collapse: collapse; }
+#logo { vertical-align: middle; }
+#logo img { display: block; margin-left: 35px; }
+#menu { vertical-align: middle; }
+
+.menu, .menu ul { list-style: none; }
+.menu { float: right; }
+.menu > li { float: left; margin-left: 20px; position: relative; }
+.menu > li > a { display: block; font: 20px 'Coming Soon', cursive; color: var(--dark); padding: 5px 10px; }
+.menu > li.active > a, .menu > li > a:hover, .menu > li:hover > a { background: var(--nav-hover); color: var(--dark); }
+.menu a:not([href]) { cursor: default; }
+
+.submenu { display: none; position: absolute; top: 100%; left: 10px; z-index: 30; background: #fff; border: 1px solid #ccc; min-width: 190px; }
+.submenu .submenu { top: -1px; left: 100%; }
+.menu > li:last-child .submenu .submenu { left: auto; right: 100%; }
+.menu li:hover > .submenu { display: block; }
+.submenu li { position: relative; border-top: 1px solid #ccc; }
+.submenu li:first-child { border-top: 0; }
+.submenu a { display: block; font: 18px 'Coming Soon', cursive; color: var(--dark); padding: 8px 14px; white-space: nowrap; background: #fff; }
+.submenu a:hover { background: #f4f4f4; color: var(--dark); }
+.submenu .arrow { float: right; margin-left: 16px; }
+
+/* ---------- the yellow banner paper ---------- */
+#banner-wrap .container { margin-top: 90px; background: repeating-linear-gradient(to bottom, var(--yellow-paper) 0 11px, var(--yellow-line) 11px 12px); }
+#banner { position: relative; background: linear-gradient(to right, #d6d29a 0 7px, transparent 7px 13px) repeat-x bottom / 13px 2px; }
+#banner-top { position: absolute; top: -54px; width: 100%; height: 54px; background: url(paper-top.svg) no-repeat top; }
+.clip { position: absolute; top: -7px; right: 7px; width: 40px; height: 60px; background: url(paperclip.svg) no-repeat; z-index: 3; }
+.scissors { position: relative; top: 9px; left: 20px; width: 22px; height: 21px; background: url(scissors.svg) no-repeat; z-index: 1; }
+.clear { clear: both; }
+
+/* A photo held in a white frame, with a second sheet tucked behind it */
+.frame { position: relative; }
+.frame::before, .frame::after { content: ""; position: absolute; background: #fff; border: 1px solid #dedbd2; }
+.frame::before { background: #f7f6f0; box-shadow: 0 1px 2px rgba(0, 0, 0, .10); transform: rotate(-0.8deg); }
+.frame::after { box-shadow: 0 1px 3px rgba(0, 0, 0, .16); transform: rotate(0.3deg); }
+.frame .picture { position: relative; z-index: 2; background: url(banner.svg) center / cover no-repeat; }
+
+.tall .frame { width: 864px; height: 327px; margin-left: 38px; }
+.tall .frame::before { left: 6px; top: 14px; width: 850px; height: 302px; }
+.tall .frame::after { left: 0; top: 10px; width: 862px; height: 304px; }
+.tall .picture { width: 840px; height: 280px; margin: 23px 0 0 12px; float: left; }
+
+.short .frame { width: 864px; height: 178px; margin-left: 38px; }
+.short .frame::before { left: 6px; top: 14px; width: 850px; height: 152px; }
+.short .frame::after { left: 0; top: 10px; width: 862px; height: 154px; }
+.short .picture { width: 840px; height: 130px; margin: 23px 0 0 12px; float: left; }
+
+/* Landing page: photo on the left, headline on the right */
+.landing #bannerleft { float: left; width: 550px; height: 332px; position: relative; }
+.landing #bannerleft::before, .landing #bannerleft::after { left: 36px; width: 508px; }
+.landing #bannerleft::before { top: 18px; height: 300px; transform: rotate(-1.6deg); }
+.landing #bannerleft::after { top: 14px; height: 302px; transform: rotate(0.4deg); }
+.landing #bannerleft .picture { width: 480px; height: 280px; margin: 26px 0 0 49px; }
+.landing .clip { top: -5px; right: 17px; }
+#bannerright { float: right; width: 290px; height: 322px; padding: 0 50px; display: table; }
+#bannerright .middle { display: table-cell; vertical-align: middle; }
+#bannerright h2 { padding: 0; line-height: 100%; }
+#bannerright p { padding: 20px 0; line-height: 140%; }
+
+/* ---------- page content on white lined paper, with the hills below ---------- */
+#main-wrap { position: relative; background: url(sky.svg) no-repeat bottom center; }
+#main-wrap .container { width: 860px; min-height: 400px; padding: 20px 40px 239px; background: repeating-linear-gradient(to bottom, #fff 0 11px, var(--white-line) 11px 12px); }
+#main-wrap-image { position: absolute; bottom: 0; width: 100%; height: 239px; background: url(hills.svg) no-repeat bottom center; pointer-events: none; }
+#content { min-height: 300px; position: relative; z-index: 1; }
+
+/* ---------- footer ---------- */
+#footer-wrap { background: repeating-linear-gradient(45deg, #242424 0 2px, #212121 2px 4px); text-align: center; }
+#footer-wrap-inner { position: relative; top: -30px; height: 30px; background: url(zigzag-footer.svg) repeat-x top; }
+#footer-wrap .container { padding: 0 0 20px; color: #aaa; }
+#footer-wrap .footer-note { padding-top: 6px; font-size: 14px; line-height: 1.6; }
+#footer-wrap .footer-note p { padding: 0; }
+
+/* ---------- buttons: a coloured strip of paper on two loose sheets ---------- */
+.button { position: relative; display: inline-block; margin: 6px 6px 6px 4px; color: #fff !important; text-decoration: none; }
+.button::before, .button::after { content: ""; position: absolute; border-radius: 1px; }
+.button::before { inset: -3px 6px 4px -6px; transform: rotate(2.6deg); }
+.button::after { inset: 4px 4px -3px -5px; transform: rotate(-2.2deg); }
+.button span { position: relative; z-index: 1; display: block; padding: 0 28px; height: 40px; line-height: 40px; font: 700 20px/40px 'Nunito', sans-serif; white-space: nowrap; border-top: 1px solid rgba(255, 255, 255, .35); box-shadow: 0 1px 2px rgba(0, 0, 0, .25); }
+.button:hover span { filter: brightness(1.06); }
+.button:active span { transform: translateY(1px); }
+.button.large span { height: 50px; line-height: 50px; padding: 0 30px; }
+
+.button.normal span { background: linear-gradient(#8fd24e, #6dbd36); text-shadow: -1px -1px 0 #507927; }
+.button.normal::before { background: #e8d31e; }
+.button.normal::after { background: #25b896; }
+.button.highlight span { background: linear-gradient(#55b6e0, #3290c4); text-shadow: -1px -1px 0 #27678f; }
+.button.highlight::before { background: #20dcb0; }
+.button.highlight::after { background: #7a2bc4; }
+
+/* ---------- content blocks ---------- */
+.columns { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.columns td { vertical-align: top; padding: 0 15px; }
+.columns td:first-child { padding-left: 0; }
+.columns td:last-child { padding-right: 0; }
+
+.video { margin: 10px 0; }
+.video .ratio { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.embed { margin: 10px 0; }
+.embed iframe { max-width: 100%; border: 0; }
+.image { padding: 10px 0; }
+.image img { max-width: 100%; }
+
+.counter { margin: 0 0 10px; }
+.counter .paragraph { margin: 0; text-align: center; }
+.counter-number { text-align: center; font: 300 80px/1.05 'Nunito', sans-serif; color: #000; }
+.counter-bold { font-size: 90px; font-weight: 700; }
+
+.gone { box-sizing: border-box; display: flex; align-items: center; justify-content: center; text-align: center; margin: 10px auto; padding: 16px; border: 2px dashed #c1bfb6; border-radius: 6px; background: rgba(255, 255, 255, .6); font-family: 'Coming Soon', cursive; color: #777; }
+.ka-note { margin: 20px 0; padding: 12px 16px; border: 1px solid #c1bfb6; background: rgba(255, 255, 255, .7); }
+.ka-note p { padding: 0 0 6px; }
+.ka-note ul { padding-left: 20px; }
+
+/* The social buttons that no longer go anywhere get crossed out */
+.social-icon { position: relative; }
+.social-icon.dead { cursor: help; background: linear-gradient(#b4b4b4, #9a9a9a); }
+.social-icon.dead svg { opacity: .7; }
+.social-icon.dead::after { content: "✕"; position: absolute; inset: -4px -3px auto auto; font: 700 15px/1 'Nunito', sans-serif; color: #e53935; text-shadow: 0 0 2px #fff, 0 0 2px #fff; transform: rotate(-12deg); }
+.social-icon.dead:hover { background: linear-gradient(#bdbdbd, #a3a3a3); }
+.social-icon.dead:hover::after { content: "RIP"; font-size: 9px; inset: auto auto -10px 50%; transform: translateX(-50%); color: #e53935; }
+
+/* Home page picture: a word cloud of the site's words, drawn by wordcloud.js */
+.landing .picture.wordcloud { background: #000; }
+.picture.wordcloud canvas { display: block; width: 100%; height: 100%; }
+
+/* "Congrats!" card on the quiz-finished pages: lettering and confetti that wobble, like a hand-drawn GIF */
+.congrats-card { position: relative; display: inline-block; width: 100%; max-width: 800px; aspect-ratio: 4 / 3; overflow: hidden; container-type: inline-size;
+  background: #fdfbe8 radial-gradient(circle, rgba(214, 196, 120, .35) 1px, transparent 1.5px) 0 0 / 9px 9px; }
+.congrats-card i { position: absolute; display: block; transform: rotate(var(--r)); animation: boil .6s steps(3) infinite; }
+.congrats-card .squiggle { width: 4.6cqw; height: 2.6cqw; border: 1.1cqw solid var(--c); border-color: var(--c) transparent transparent transparent; border-radius: 50%; }
+.congrats-card .dot { width: 1.3cqw; height: 1.3cqw; border-radius: 50%; background: var(--c); }
+.congrats-word { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -54%) rotate(-7deg); white-space: nowrap;
+  font: 22cqw/1 'Yellowtail', cursive; color: #e9433a; padding: 0 4cqw; animation: boil-word .6s steps(3) infinite; }
+.congrats-word::after { content: ""; position: absolute; height: 1.1cqw; border-radius: 1cqw; background: #e9433a; }
+.congrats-word::after { left: 6%; right: 14%; bottom: 2%; transform: rotate(-2deg); }
+@keyframes boil { 0% { translate: 0 0; } 33% { translate: .25cqw -.2cqw; } 66% { translate: -.2cqw .2cqw; } }
+@keyframes boil-word { 0% { translate: 0 0; } 33% { translate: .15cqw -.1cqw; } 66% { translate: -.1cqw .12cqw; } }
+@media (prefers-reduced-motion: reduce) { .congrats-card i, .congrats-word { animation: none; } }
+
+/* "Weebly", crossed out like the dead social buttons: red X, and "RIP" on hover */
+.rip { position: relative; display: inline-block; cursor: help; }
+.rip::after { content: "✕"; position: absolute; top: -.55em; right: -.6em; font: 700 .9em/1 'Nunito', sans-serif; color: #e53935; transform: rotate(-12deg); }
+
+
+/* Parody of the "Powered by Weebly" tab pinned to the bottom-left of free Weebly sites */
+.weebly-tab { position: fixed; left: 10px; bottom: 0; z-index: 50; width: 260px; font-family: 'Nunito', sans-serif; color: #fff; text-align: center; cursor: help; }
+.weebly-tab-bar { background: #3a78f2; border-radius: 4px 4px 0 0; padding: 7px 0 6px; font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+.weebly-tab-bar .rip { margin-left: 4px; font-size: 16px; letter-spacing: 0; text-transform: none; }
+.weebly-tab-panel { max-height: 0; overflow: hidden; background: #3a78f2; border-radius: 4px 4px 0 0; transition: max-height .25s ease, padding .25s ease; padding: 0 18px; font-size: 14px; line-height: 1.5; }
+.weebly-tab-panel p { padding: 0; }
+.weebly-tab:hover .weebly-tab-panel, .weebly-tab:focus-within .weebly-tab-panel { max-height: 120px; padding: 16px 18px 6px; }
+.weebly-tab:hover .weebly-tab-bar { border-radius: 0; }
+.weebly-tab:hover .rip::after { content: "RIP"; font-size: .6em; top: -.35em; right: -1.9em; bottom: auto; left: auto; transform: rotate(-12deg); }

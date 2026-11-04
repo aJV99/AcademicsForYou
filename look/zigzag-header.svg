@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="756" height="28" viewBox="0 0 756 28">
+  <!-- Bottom edge of the white header: a coloured zig-zag, sky below it -->
+  <polygon points="0,1 190,15 400,1 600,24 756,4 756,28 0,28" fill="#b7eeff"/>
+  <g stroke-width="4" stroke-linecap="square" fill="none">
+    <polyline points="0,1 190,15" stroke="#f0b323"/>
+    <polyline points="190,15 400,1" stroke="#c9de1f"/>
+    <polyline points="400,1 600,24" stroke="#20dcb0"/>
+    <polyline points="600,24 756,4" stroke="#e6249e"/>
+  </g>
+</svg>
