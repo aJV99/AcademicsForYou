@@ -533,7 +533,7 @@ WEEBLY_TAB = """<aside class="weebly-tab" aria-label="About Weebly">
     <p>Weebly hosted this site from 2015 to 2026.</p>
     <p>Gone, but not forgotten. 🪦</p>
   </div>
-  <div class="weebly-tab-bar">POWERED BY <span class="rip">Weebly</span></div>
+  <div class="weebly-tab-bar">NOT POWERED BY <span class="rip">Weebly</span></div>
 </aside>"""
 
 
